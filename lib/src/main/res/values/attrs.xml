@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullRefreshLayout_Layout">
+        <attr name="layout_refreshTarget" format="boolean"/>
+        <attr name="layout_progressTarget" format="boolean"/>
+        <attr name="layout_progressPosition" format="enum">
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

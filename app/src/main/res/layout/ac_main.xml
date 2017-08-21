@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.androlib.lib.PullRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#666666">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_refreshTarget="true"
+            android:gravity="center"
+            android:text="家乐福科技阿卡丽"
+            android:textSize="30sp"
+            android:background="#ffffff"/>
+
+        <!--<com.androlib.lib.NestedRecyclerView-->
+            <!--android:id="@+id/list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <View
+            android:id="@+id/top_progress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_progressTarget="true"
+            app:layout_progressPosition="top"
+            android:background="#ff0000"/>
+
+
+        <View
+            android:id="@+id/bottom_progress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_progressTarget="true"
+            app:layout_progressPosition="bottom"
+            android:background="#00ff00"/>
+
+    </com.androlib.lib.PullRefreshLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#666666">-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2000dp"-->
+            <!--android:text="公司撒花都很好\n干啥事干撒的水果公司撒花都很好\n干啥事干撒的水果公司撒花都很好\n干啥事干撒的水果公司撒花都很好\n干啥事干撒的水果公司撒花都很好\n干啥事干撒的水果公司撒花都很好\n干啥事干撒的水果"-->
+            <!--android:textSize="50dp"-->
+            <!--android:background="#ffffff"/>-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</LinearLayout>
